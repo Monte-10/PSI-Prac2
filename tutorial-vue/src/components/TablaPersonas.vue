@@ -64,6 +64,19 @@
                     this.personaEditada = Object.assign({}, persona);
                     this.editando = persona.id;
                 },
+
+                guardarPersona(persona) {
+                    if (!persona.nombre.length || !persona.apellido.length || !persona.email.length) {
+                        return;
+                    }
+                    this.$emit('actualizar-persona', persona.id,persona);
+                    this.editando = null;
+                },
+
+                cancelarEdicion(persona) {
+                    Object.assign(persona, this.personaEditada);
+                    this.editando = null;
+                }
             },
 
             data() {
