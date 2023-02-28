@@ -7,10 +7,11 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "bootstrap": "^5.2.3",
+    "vue": "^3.2.27"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
-    "vite": "^2.9.14"
+    "vite": "^2.9.15"
   }
 }
